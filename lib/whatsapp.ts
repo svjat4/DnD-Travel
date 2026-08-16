@@ -1,7 +1,7 @@
 // lib/whatsapp.ts
 
 export function getWhatsAppUrl(serviceName?: string) {
-  const baseUrl = "https://wa.me/62878674047822";
+  const baseUrl = "https://wa.me/6287867047822";
   
   if (serviceName) {
     const message = `Hello D&D Travel & Tour, I'm interested in the ${serviceName}. Could you please provide availability and pricing?`;
