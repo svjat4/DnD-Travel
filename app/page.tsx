@@ -20,11 +20,11 @@ export default function Home() {
       {/* Services Component */}
       <ServicesSection />
 
-      {/* ABOUT SECTION (Digabung dengan Why Us & How It Works) */}
+      {/* ABOUT SECTION */}
       <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Bagian Profil Perusahaan (Baru Ditambahkan) */}
+          {/* Bagian Profil Perusahaan */}
           <div className="max-w-3xl mx-auto text-center mb-20">
             <h2 className="text-brand-gold text-sm font-bold tracking-widest uppercase mb-4">Our Story</h2>
             <h3 className="text-3xl md:text-5xl font-serif text-brand-dark mb-6">About D&D Travel & Tour</h3>
@@ -116,32 +116,96 @@ export default function Home() {
       {/* Contact & Footer */}
       <footer id="contact" className="bg-brand-cream pt-20 pb-10 border-t border-brand-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="grid md:grid-cols-2 gap-12 mb-16">
+
+            {/* CTA */}
             <div>
-              <h3 className="text-4xl font-serif text-brand-dark mb-6">Let's Plan Your Bali Experience</h3>
-              <p className="text-brand-muted mb-8 max-w-md">Reach out to us via WhatsApp to start planning your perfect itinerary. We're here to help.</p>
-              <a 
+              <h3 className="text-4xl font-serif text-brand-dark mb-6">
+                Let's Plan Your Bali Experience
+              </h3>
+
+              <p className="text-brand-muted mb-8 max-w-md">
+                Reach out to us via WhatsApp to start planning your perfect
+                itinerary. We're here to help.
+              </p>
+
+              <a
                 href={getWhatsAppUrl()}
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center bg-brand-green text-white px-8 py-4 rounded-full font-medium hover:bg-brand-dark transition-colors"
               >
                 Chat on WhatsApp Now
               </a>
             </div>
+
+            {/* Contact Information */}
             <div className="space-y-4 text-brand-charcoal">
-              <h4 className="font-bold text-xl mb-4">D&D Travel & Tour</h4>
+              <h4 className="font-bold text-xl mb-4">
+                D&D Travel & Tour
+              </h4>
+
               <p>Jl. Sulatri No. 168, Penatih, East Denpasar</p>
               <p>Bali, Indonesia</p>
-              <p className="pt-4"><strong>WhatsApp:</strong> +62 878-6740-47822</p>
-              <p><strong>Instagram:</strong> @balitravel.tour</p>
-              <p className="text-sm text-brand-muted">Facebook: Coming Soon</p>
+
+              <p className="pt-4">
+                <strong>WhatsApp:</strong>{" "}
+                <a
+                  href="https://wa.me/62878674047822"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-green font-medium transition-colors"
+                >
+                  +62 878-6740-47822
+                </a>
+              </p>
+
+              <p>
+                <strong>Instagram:</strong>{" "}
+                <a
+                  href="https://www.instagram.com/balitravel.tour/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-green font-medium transition-colors"
+                >
+                  @balitravel.tour
+                </a>
+              </p>
+
+              <p>
+                <strong>Facebook:</strong>{" "}
+                <a
+                  href="https://www.facebook.com/profile.php?id=61593551840912"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-green font-medium transition-colors"
+                >
+                  Bali Travel And Tour
+                </a>
+              </p>
+
+              <p>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:ddtravelandtour59@gmail.com"
+                  className="hover:text-brand-green font-medium transition-colors"
+                >
+                  ddtravelandtour59@gmail.com
+                </a>
+              </p>
             </div>
+
           </div>
-          
+
+          {/* Copyright */}
           <div className="text-center pt-8 border-t border-brand-beige text-brand-muted text-sm">
             <p>Explore Bali. Your way.</p>
-            <p className="mt-2">© 2026 D&D Travel & Tour. All rights reserved.</p>
+            <p className="mt-2">
+              © 2026 D&D Travel & Tour. All rights reserved.
+            </p>
           </div>
+
         </div>
       </footer>
     </main>
